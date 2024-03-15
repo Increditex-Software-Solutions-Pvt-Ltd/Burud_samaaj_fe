@@ -1,61 +1,43 @@
-
-body{
-  background-image: url();
-  background-color: black;
-  color: white;
+  /* CSS for styling the form */
+  .form-step {
+    display: none;
+    max-width: 500px; /* Limit the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-#container {
-    max-width: 550px;  
-    box-shadow: 0px 5px 9px white;
-    border-radius: 20px;
-    padding: 50px 20px 40px 20px;
-  }
-  #Entry_img{
-     text-align: center;
-  }
-  
-  select option{
-    background-color:rgb(252, 145, 145);
-    color: white;
-  }
-  select option:hover{
-    background-color: pink;
-  }
-  
-  .step-container {
-    position: relative;
-    text-align: center;
-    transform: translateY(-43%);
-  }
-  
-  .step-circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #fff;
-    border: 2px solid #007bff;
-    line-height: 30px;
-    font-weight: bold;
-    display: flex;
-    color: black;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    cursor: pointer; /* Added cursor pointer */
-  }
-  
-  .step-line {
-    position: absolute;
-    top: 16px;
-    left: 50px;
-    width: calc(100% - 100px);
-    height: 2px;
+.form-step.active {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
     background-color: #007bff;
-    z-index: -1;
-  }
-  
-  #multi-step-form{
-    overflow-x: hidden;
-  }
-  
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    /* Adjust form layout for smaller screens */
+    .form-step {
+        padding: 10px;
+    }
+}
