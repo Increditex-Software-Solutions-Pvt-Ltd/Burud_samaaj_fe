@@ -5,6 +5,16 @@
     margin: 0 auto; /* Center the form horizontally */
     padding: 20px;
     box-sizing: border-box;
+    box-shadow: 1px 2px 9px white;
+}
+
+.form-step h2{
+    text-align:center;
+}
+.Form_main{
+    background-color: rgb(247, 72, 72);
+    color: white;
+    
 }
 
 .form-step.active {
@@ -14,6 +24,7 @@
 input[type="text"],
 input[type="email"],
 input[type="date"],
+input[type="number"],
 select,
 textarea {
     width: 100%;
