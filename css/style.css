@@ -346,35 +346,6 @@
 }
 
 
-/*** Appointment ***/
-.bootstrap-datetimepicker-widget.bottom {
-    top: auto !important;
-}
-
-.bootstrap-datetimepicker-widget .table * {
-    
-    border-bottom-width: 0px;
-}
-
-.bootstrap-datetimepicker-widget .table th {
-    font-weight: 500;
-}
-
-.bootstrap-datetimepicker-widget.dropdown-menu {
-    padding: 10px;
-    border-radius: 2px;
-}
-
-.bootstrap-datetimepicker-widget table td.active,
-.bootstrap-datetimepicker-widget table td.active:hover {
-    background: var(--primary);
-}
-
-.bootstrap-datetimepicker-widget table td.today::before {
-    border-bottom-color: var(--primary);
-}
-
-
 /*** Testimonial ***/
 .testimonial-carousel::before {
     position: absolute;
@@ -557,7 +528,7 @@ transition: all 0.3s ease-in-out;
 color: #4267b2;
 }
 
-.socialLinks ul li a .fa-twitter {
+.socialLinks ul li a .fa-youtube {
 color: #1da1f2;
 }
 
@@ -578,12 +549,12 @@ color: #fff;
 background: #4267b2;
 }
 
-.socialLinks ul li a:hover .fa-twitter {
+.socialLinks ul li a:hover .fa-youtube {
 background: #1da1f2;
 }
 
 .socialLinks ul li a:hover .fa-google-plus-g {
-background: #dd5044;
+background: #0177b5;
 }
 
 .socialLinks ul li a:hover .fa-linkedin-in {
@@ -640,7 +611,7 @@ display: block;
 .footer .widget3 ul li a:hover,
 .footer .widget4 ul li a:hover,
 .footer .widget2 a:hover p {
-color: #2814a9;
+color:rgb(0, 255, 30);
 }
 
 .footer .widget3 h5 {

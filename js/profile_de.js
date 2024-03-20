@@ -17,3 +17,12 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+// create pdf
+function generatePdf(){
+  const element = document.getElementById("main_section")
+
+  html2pdf()
+  .from(element)
+  .save()
+}
