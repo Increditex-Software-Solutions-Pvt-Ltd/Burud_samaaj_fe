@@ -115,217 +115,22 @@
 
         <p class="text-center fs-1">---💌---</p>
 
-        <div id="myBtnContainer" class="text-center mt-3">
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('nature')">Brides</button>
-            <button class="btn" onclick="filterSelection('cars')"> Grooms</button>
-            <button class="btn" onclick="filterSelection('people')">Disable</button>
+        <!-- filter buttons -->
+        <div id="filters">
+            <button class="filter-btn btn active" data-category="all">See All</button>
+            <button class="filter-btn btn" data-category="groom">Groom</button>
+            <button class="filter-btn btn" data-category="bride">Bride</button>
+            <button class="filter-btn btn" data-category="disabled">Disabled</button>
         </div>
 
         <!-- Portfolio Gallery Grid -->
-        <div class="row m-0 mt-4">
+        <div id="profileContainer" class="row gap-2">
 
-            <div class="col-md-4 column nature">
-                <div class="image_body">
-                    <div class="content">
-                        <img src="https://i.pinimg.com/736x/c3/21/b4/c321b403c05ef0a241cb08f331868d87.jpg"
-                            alt="Mountains" style="width:100%" class="rounded-5">
-                        <div class="text-center">
-                            <h4 class=" p-2">Guarav nale</h4>
-                            <p> <button class="btn btn-danger">Nashik</button>
-                                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    See Details
-                                </button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 column nature">
-                <div class="image_body">
-                    <div class="content">
-                        <img src="https://static.toiimg.com/imagenext/toiblogs/photo/readersblog/wp-content/uploads/2020/04/Indian-Bride-Feature-Image.jpg"
-                            alt="Lights" style="width:100%" class="img rounded-5">
-                        <div class="text-center">
-                            <h4 class=" p-2">Guarav nale</h4>
-                            <p> <button class="btn btn-danger">Kolhapur</button>
-                                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    See Details
-                                </button>
-                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Profile Details</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div>
-                                                <img src="https://cdn.shopify.com/s/files/1/0683/1800/3511/files/white_saree_bride_480x480.jpg?v=1691565347"
-                                                    alt="" style="height: 200px; width: 200px;" class="rounded-4">
-                                                <div class="mt-2">
-                                                    <h6 class="text-center">Personal Information</h6>
-                                                    <table class="table">
-                                                        <h5 class="bg-danger text-white p-2"><b>ID:BB001</b></h5>
-                                                        <tr>
-                                                            <td>Name:</td>
-                                                            <td>Priya</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Date Of Birth:</td>
-                                                            <td>27/05/1998</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Occupation:</td>
-                                                            <td>Self Buiseness(Agree Related)</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Education:</td>
-                                                            <td>MA (Master In Arts)</td>
-                                                        </tr>
-                                                    </table>
-                                                </div>
-                                            </div>
-
-
-
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-danger">
-                                                <a href="profile_de.html" style="text-decoration: none;"
-                                                    class="text-white">View Profile</a>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 column nature">
-                <div class="image_body">
-                    <div class="content">
-                        <img src="https://i.pinimg.com/736x/c3/21/b4/c321b403c05ef0a241cb08f331868d87.jpg" alt="Nature"
-                            style="width:100%">
-                        <div class="text-center">
-                            <h4 class=" p-2">Guarav nale</h4>
-                            <p> <button class="btn btn-danger">Kolhapur</button>
-                                <button class="btn btn-outline-dark">See Details</button>
-                            </p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
-        <div class="row m-0">
-            <div class="col-md-4 column cars">
-                <div class="image_body">
-                    <div class="content">
-                        <img src="https://wevaphotography.com/wp-content/uploads/2021/08/Christian-Wedding-Groom-Posing-Ideas-_-Best-Groom-Portrait-_-Weva-Photography-scaled.jpg"
-                            alt="Car" style="width:100%;">
-                        <div class="text-center">
-                            <h4 class=" p-2">Guarav nale</h4>
-                            <p> <button class="btn btn-danger">Kolhapur</button>
-                                <button class="btn btn-outline-dark">See Details</button>
-                            </p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 column cars">
-                <div class="image_body">
-                    <div class="content">
-                        <img src="https://ik.imagekit.io/yfnz71p9w/wp-content/uploads/2022/05/groom-pose-with-accessories.png"
-                            alt="Car" style="width:100%">
-                        <div class="text-center">
-                            <h4 class=" p-2">Guarav nale</h4>
-                            <p> <button class="btn btn-danger">Kolhapur</button>
-                                <button class="btn btn-outline-dark">See Details</button>
-                            </p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 column cars">
-                <div class="image_body">
-                    <div class="content">
-                        <img src="https://www.lovevivah.com/matrimony/blog/wp-content/uploads/2017/10/Indian-Groom-To-Be.jpg"
-                            alt="Car" style="width:100%">
-                        <div class="text-center">
-                            <h4 class=" p-2">Guarav nale</h4>
-                            <p> <button class="btn btn-danger">Kolhapur</button>
-                                <button class="btn btn-outline-dark">See Details</button>
-                            </p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- pagination start here -->
+        <div id="pagination" class="mb-5"></div> 
 
-        <div class="row">
-            <div class="col-md-4 column people">
-                <div class="image_body">
-                    <div class="content">
-                        <img src="https://www.vivaah.com/bride_groom_images/V/H/X/1/VHX1212_3360326635_m.jpg" alt="Car"
-                            style="width:100%">
-                        <div class="text-center">
-                            <h4 class=" p-2">Guarav nale</h4>
-                            <p> <button class="btn btn-danger">Kolhapur</button>
-                                <button class="btn btn-outline-dark">See Details</button>
-                            </p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 column people">
-                <div class="image_body">
-                    <div class="content">
-                        <img src="https://www.chavaraempowermatrimony.com/Images/ProfilePhotos/65_3022019103233584.jpeg"
-                            alt="Car" style="width:100%">
-                        <div class="text-center">
-                            <h4 class=" p-2">Guarav nale</h4>
-                            <p> <button class="btn btn-danger">Kolhapur</button>
-                                <button class="btn btn-outline-dark">See Details</button>
-                            </p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 column people">
-                <div class="image_body">
-                    <div class="content">
-                        <img src="https://www.getmemarry.com/getsnap.php?id=7414&typ=tn" alt="Car" style="width:100%">
-                        <div class="text-center">
-                            <h4 class=" p-2">Guarav nale</h4>
-                            <p> <button class="btn btn-danger">Kolhapur</button>
-                                <button class="btn btn-outline-dark">See Details</button>
-                            </p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- END GRID -->
-        </div>
 
         <!-- END MAIN -->
     </div>
@@ -347,7 +152,7 @@
                         <h5>
                             Quick Links
                         </h5>
-                        <ul>
+                        <ul class="ps-0">
                             <li>
                                 <a href="./index.html" class="text-decoration-none word-hover">
                                     Home
@@ -386,7 +191,7 @@
                         <h5>
                             Other Links
                         </h5>
-                        <ul>
+                        <ul class="ps-0">
                             <li>
                                 <a href="./search.html" class="text-decoration-none word-hover">
                                     Simple search
